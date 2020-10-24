@@ -10,7 +10,7 @@ graph for (a modified version of) the famous `org-agenda` function:
 ![image](https://user-images.githubusercontent.com/100738/96385726-9e5eb580-118d-11eb-8ded-569cf8faf9b4.png)
 
 This package is built on top of `elp.el`, which is one of two elisp
-profiler's built into emacs, the other being `profiler.el`.  (They are
+profiler's built into emacs.  (The other is `profiler.el`; they are
 both mentioned in [the Profiling section of the Elisp
 manual](https://www.gnu.org/software/emacs/manual/html_node/elisp/Profiling.html).)
 It records a separate trace using advice on the normal `elp.el`
@@ -41,7 +41,7 @@ recording, since `elp.el` doesn't capture enough info itself.
 
 4.  Run `M-x etrace-clear`.
 
-5.  Execute the code for which you want a trace.
+5.  Execute the code which you want to analyse.
 
 6.  Run `M-x etrace-write` to write out the trace file.
 
