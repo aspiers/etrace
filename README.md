@@ -1,4 +1,4 @@
-# Performance Tracing For Emacs Lisp
+# `etrace.el` - Performance Tracing For Emacs Lisp
 
 This package for GNU Emacs allows latency tracing to be performed on
 Emacs Lisp code and the results output to files using the Chromium
@@ -73,3 +73,12 @@ re-instrumented.
 
 Finally, you can run `M-x elp-restore-all` to un-instrument any
 instrumented functions.
+
+## History and acknowledgements
+
+This package was originally written by [Tristan
+Hume](https://github.com/trishume) and shared as [a GitHub
+gist](https://gist.github.com/trishume/40bf7045a23412d4c016f5e8533437db).
+However he didn't have plans to develop it further, so he generously
+[handed over
+maintenance](https://gist.github.com/trishume/40bf7045a23412d4c016f5e8533437db#gistcomment-3495349).
