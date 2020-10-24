@@ -4,12 +4,15 @@ This package for GNU Emacs allows latency tracing to be performed on
 Emacs Lisp code and the results output to files using the Chromium
 Catapult Trace Event Format.  These trace files can then be loaded
 into trace analysis utilities in order to generate *flame graphs* and
-other useful visualisations and analyses.
+other useful visualisations and analyses.  For example, here's a flame
+graph for (a modified version of) the famous `org-agenda` function:
 
-It is built on top of `elp.el`, which is one of two elisp profiler's
-built into emacs, the other being `profiler.el` (they are both
-mentioned in [the Profiling section of the Elisp
-manual](https://www.gnu.org/software/emacs/manual/html_node/elisp/Profiling.html)).
+![image](https://user-images.githubusercontent.com/100738/96385726-9e5eb580-118d-11eb-8ded-569cf8faf9b4.png)
+
+This package is built on top of `elp.el`, which is one of two elisp
+profiler's built into emacs, the other being `profiler.el`.  (They are
+both mentioned in [the Profiling section of the Elisp
+manual](https://www.gnu.org/software/emacs/manual/html_node/elisp/Profiling.html).)
 
 ## Usage
 
