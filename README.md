@@ -13,6 +13,8 @@ This package is built on top of `elp.el`, which is one of two elisp
 profiler's built into emacs, the other being `profiler.el`.  (They are
 both mentioned in [the Profiling section of the Elisp
 manual](https://www.gnu.org/software/emacs/manual/html_node/elisp/Profiling.html).)
+It records a separate trace using advice on the normal `elp.el`
+recording, since `elp.el` doesn't capture enough info itself.
 
 ## Usage
 
