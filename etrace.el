@@ -1,5 +1,5 @@
 ;;; etrace.el --- Emacs Lisp Tracer  -*- lexical-binding: t -*-
-;; Released under the MIT license
+;; Released under the MIT license, Copyright Jane Street Group, LLC
 ;; This module modifies the instrumentation profiler included with
 ;; Emacs called "elp" to also record trace events for the beginning
 ;; and end of function calls, and provides a function to write out
