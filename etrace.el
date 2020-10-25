@@ -27,8 +27,9 @@ ELP is the Emacs Lisp Profiler.  To restore the function to its
 original definition, use \\[elp-restore-function] or \\[elp-restore-all]."
       (let ((result))
         (push (list ?B funsym (current-time)) etrace--trace)
-        (setq result (apply elp-wrapper func args))
-        (push (list ?E funsym (current-time)) etrace--trace)
+        (unwind-protect
+            (setq result (apply elp-wrapper func args))
+          (push (list ?E funsym (current-time)) etrace--trace))
         result))))
 
 (advice-add #'elp--make-wrapper :around #'etrace--make-wrapper-advice)
